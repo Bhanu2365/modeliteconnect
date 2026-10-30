@@ -1,0 +1,2 @@
+import { MapPin } from 'lucide-react'
+export default function ModelCard({ model }) { return <article className="model-card"><div className="model-image-wrap"><img src={`https://images.unsplash.com/${model.image}?auto=format&fit=crop&w=760&q=85`} alt={model.name} /><span className="availability"><i />{model.status}</span></div><div className="model-card-info"><div><h3>{model.name}</h3><span className="model-category">{model.category}</span></div><span className="model-location"><MapPin size={13}/>{model.city.split(',')[0]}</span></div></article> }

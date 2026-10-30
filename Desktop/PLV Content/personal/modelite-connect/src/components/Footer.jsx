@@ -1,0 +1,3 @@
+import { Link } from 'react-router-dom'
+import useSiteSettings from '../hooks/useSiteSettings.js'
+export default function Footer() { const settings=useSiteSettings();return <footer className="site-footer"><div className="footer-top"><Link to="/" className="wordmark">MODELITE<span>CONNECT</span></Link><p>A more considered way to find your people.</p><Link to="/request-access" className="text-link">Join the network <span>↗</span></Link></div><div className="footer-bottom"><span>© 2026 MODELITE Connect</span><div><a href={`mailto:${settings.contactEmail}`}>Get in touch</a><Link to="/login">Member login</Link></div><span>Made for the next frame.</span></div></footer> }
